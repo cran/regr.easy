@@ -246,7 +246,7 @@ regr_easy_calc <- function(x,y,model="all"){
       regreres["Cubic Model"] <- list(cub_det$coefficients)
       regreres["R-square - Cubic Model"] <- list(cub_det$r.squared)
       regreres["Equation - Cubic Model"] <- list(form_cub$equation)
-      invisible(regreres)
+      return(invisible(regreres))
     }
 
   },
